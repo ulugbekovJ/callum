@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Homenaje&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#section-1 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000000000;
+}
+#section-1 .nav-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 22px;
+}
+#section-1 .nav-item a {
+  padding-bottom: 3px;
+}
+#section-1 .d-flex {
+  font-size: 28px;
+  color: gray;
+}
+#section-1 .d-flex i {
+  cursor: pointer;
+}
+#section-1 .d-flex i:hover {
+  color: rgb(40, 40, 216);
+  transition: 0.5s;
+}
+#section-1 .toogle {
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(250, 250, 7);
+}
+#section-1 .nav-item:hover .toogle {
+  width: 100%;
+  transition: 0.5s;
+}
+
+#section-2 {
+  margin-top: 70px;
+}
+#section-2 .bg-1 {
+  height: 90vh;
+  background-image: url(./callum/intro-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section-2 .mask {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5490196078);
+  color: white;
+  text-align: center;
+}
+#section-2 .mask .hi-fre {
+  margin-top: 100px;
+  font-size: 32px;
+}
+#section-2 .mask .dev h1 {
+  font-size: 124px;
+}
+#section-2 .mask .usa-bas h1 {
+  font-size: 21px;
+}
+@media (max-width: 992px) {
+  #section-2 .mask .dev h1 {
+    font-size: 59px;
+  }
+}
+#section-2 .btn-down {
+  margin-top: 50px;
+}
+#section-2 .btn-down .btn {
+  --color1: rgb(250, 250, 7);
+  --color2: rgb(250, 250, 7);
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #000;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+#section-2 .btn-down .btn::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+#section-2 .btn-down .btn::after {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+#section-2 .btn-down .btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+}
+
+#section-3 .container .me {
+  font-size: 1rem;
+  background-color: #f5df4e;
+  width: 100px;
+  margin: 5px auto;
+}
+#section-3 .container .k-more {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+#section-3 .container .smith h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+#section-3 .container .smith .cl-smith {
+  font-weight: 700;
+  border-width: 3px;
+  border-bottom: 3px solid #f5df4e;
+}
+#section-3 .container .smith p {
+  font-size: 21px;
+  margin-bottom: 1rem;
+}
+#section-3 .container .twen {
+  display: block;
+  position: relative;
+}
+#section-3 .container .twen .cricle-22 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f5df4e;
+  color: rgb(88, 87, 87);
+  margin-left: 150px;
+  text-align: center;
+  position: absolute;
+}
+#section-3 .container .twen .cricle-22 h1 {
+  position: relative;
+  font-size: 155px;
+  bottom: 20px;
+  right: 10px;
+}
+#section-3 .container .twen .years {
+  position: absolute;
+  bottom: 30px;
+  right: -50px;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+#section-3 .container .twen .years .expr {
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  #section-3 .container .twen {
+    display: none;
+  }
+}
+#section-3 .box-v {
+  display: flex;
+  justify-content: space-between;
+}
+#section-3 .box-v .box-n {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+#section-3 .box-v .box-n .h3-sm {
+  margin-left: 0;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #6c757d;
+}
+#section-3 .box-v .box-n .h3-sm span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+@media (max-width: 992px) {
+  #section-3 .box-v {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#section-4 .me {
+  font-size: 1rem;
+  background-color: #f5df4e;
+  width: 100px;
+  margin: 5px auto;
+}
+#section-4 .k-more {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+#section-4 .Design {
+  padding: 15px;
+  text-align: center;
+}
+#section-4 .Design i {
+  margin: 20px;
+  color: #f5df4e;
+  font-size: 53px;
+}
+#section-4 .Design h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+#section-4 .Design p {
+  color: #6c757d;
+}
+
+#section-5 .me {
+  font-size: 1rem;
+  background-color: #f5df4e;
+  width: 100px;
+  margin: 5px auto;
+}
+#section-5 .k-more {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+#section-5 .my-edu {
+  font-weight: 600;
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+#section-5 .box-mas {
+  padding: 0 30px;
+  border-left: #f5df4e solid 3px;
+}
+#section-5 .box-mas .Master h3 {
+  font-size: 21px;
+}
+#section-5 .box-mas .Master h4 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+#section-5 .box-mas .Master p {
+  color: #6c757d;
+}
+#section-5 .progress-bar {
+  background-color: #f5df4e;
+  height: 0.5rem;
+}
+#section-5 .progress-sm {
+  height: 0.5rem;
+}
+
+#section-6 .me {
+  font-size: 1rem;
+  background-color: #f5df4e;
+  width: 100px;
+  margin: 5px auto;
+}
+#section-6 .k-more {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+#section-6 .all-pg {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#section-6 .all-pg .all-m p {
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+#section-6 .all-pg .all-m p:hover {
+  color: black;
+}
+#section-6 .all-pg .all-m .sp-togle {
+  display: block;
+  width: 0%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #f5df4e;
+  transition: 0.5s;
+}
+#section-6 .all-m:hover .sp-togle {
+  width: 100%;
+}
+#section-6 .clock {
+  pad: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#section-6 .clock img {
+  width: 100%;
+  transition: 0.5s;
+}
+#section-6 .clock img:hover {
+  scale: 1.2;
+}
+#section-6 .bg-com {
+  width: 100%;
+  height: 500px;
+  background-image: url(./callum/intro-bg-2.jpg);
+  background-clip: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#section-6 .bg-com .bg-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 30, 30, 0.733);
+  position: relative;
+}
+#section-6 .bg-com .bg-mask .work-text {
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  visibility: visible;
+}
+#section-6 .bg-com .bg-mask .work-text h1 {
+  font-size: 52px;
+  font-weight: 600 !important;
+}
+#section-6 .bg-com .bg-mask .Btn {
+  margin: 30px auto;
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+#section-6 .bg-com .bg-mask .Btn::before {
+  position: absolute;
+  content: "Hire Me!";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+#section-6 .bg-com .bg-mask .Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+#section-6 .bg-com .bg-mask .Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+#section-6 .bg-com .bg-mask .Btn:active {
+  transform: scale(0.95);
+}
+
+#section-7 .container .row .faq .wrap-faq {
+  margin-bottom: 20px;
+}
+#section-7 .container .row .faq .wrap-faq h1 {
+  font-weight: 600;
+}
+#section-7 .container .row .faq .wrap-faq h6 {
+  width: 60px;
+  padding: 3px 10px;
+  background-color: #f5df4e;
+  font-size: 22px;
+}
+#section-7 .container .row .faq .text-faq .text-faq1 i {
+  display: inline-block;
+  align-items: center;
+}
+#section-7 .container .row .faq .text-faq .text-faq1 p {
+  display: inline-block;
+  color: #6c757d;
+  font-size: 16px;
+}
+#section-7 .container .row .img-faq img {
+  width: 100%;
+}
+
+#section-8 {
+  background-color: #939597 !important;
+}
+#section-8 .me {
+  font-size: 1rem;
+  background-color: #f5df4e;
+  width: 150px;
+  margin: 5px auto;
+}
+#section-8 .k-more {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: white;
+}
+#section-8 .container {
+  padding: 10px;
+}
+#section-8 .cray {
+  width: 850px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 15px;
+}
+#section-8 .cray p {
+  color: white;
+  font-weight: 600;
+  margin: 30px;
+}
+#section-8 .cray img {
+  border-radius: 50%;
+}
+
+#section-9 {
+  background-color: #f5df4e;
+}
+#section-9 .contact1 {
+  width: 100%;
+  padding: 100px 10px;
+}
+#section-9 .contact1 .lets {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+#section-9 .contact1 .text-5 {
+  font-size: 1.35rem;
+}
+#section-9 .contact1 address {
+  font-style: normal;
+  line-height: inherit;
+  margin-bottom: 1.3125rem;
+}
+#section-9 .contact1 .form-border .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.315);
+  border-radius: 0;
+  color: #000;
+  padding-left: 0 !important;
+}
+#section-9 .contact1 .form-control:not(.form-control-sm) {
+  height: inherit;
+  padding: 0.81rem 0.96rem;
+}
+#section-9 .contact1 .py-1 {
+  padding-bottom: 0.25rem !important;
+  padding-top: 0.25rem !important;
+}
+#section-9 .contact1 .custom-select,
+#section-9 .contact1 .form-control {
+  border-color: #dae1e3;
+  color: #656565;
+  font-size: 1.25rem;
+}
+#section-9 .contact1 .btn {
+  border-width: 2px;
+  font-weight: 500;
+  padding: 0.8rem 2.6rem;
+  transition: all 0.5s ease;
+}
+#section-9 .contact1 .btn:hover {
+  background-color: #000;
+}
+#section-9 .contact1 .btn:not(.btn-link) {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+#section-9 .contact1 [type=button]:not(:disabled),
+#section-9 .contact1 [type=reset]:not(:disabled),
+#section-9 .contact1 [type=submit]:not(:disabled),
+#section-9 .contact1 button:not(:disabled) {
+  cursor: pointer;
+}
+#section-9 .my-soci {
+  display: flex !important;
+  padding-left: 0;
+  margin: 25px 0;
+}
+#section-9 .my-soci li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 26px;
+  margin-right: 10px;
+  width: 40px;
+}
+#section-9 .my-soci li a {
+  color: #4d555a;
+  font-size: 26px;
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
+}
+#section-9 .my-soci .social-icons-twitter a:hover {
+  display: block;
+  color: rgb(44, 138, 175);
+  scale: 1.5;
+  transition: 0.5s;
+}
+#section-9 .my-soci .social-icons-facebook a:hover {
+  display: block;
+  color: rgb(17, 74, 180);
+  scale: 1.5;
+  transition: 0.5s;
+}
+#section-9 .my-soci .social-icons-instagram a:hover {
+  display: block;
+  color: rgb(194, 28, 28);
+  scale: 1.5;
+  transition: 0.5s;
+}
+#section-9 .my-soci .social-icons-github a:hover {
+  display: block;
+  color: rgb(3, 3, 3);
+  scale: 1.5;
+  transition: 0.5s;
+}
+#section-9 .my-soci .social-icons-dribbble a:hover {
+  display: block;
+  color: rgb(235, 8, 167);
+  scale: 1.5;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+}
+footer .container .row .ft-p {
+  padding: 66px 0;
+}
+
+@media (max-width: 992px) {
+  .all-pg {
+    width: 250px !important;
+  }
+  .all-pg .all-m {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .all-pg .s1-1 {
+    display: none !important;
+  }
+  .work-text {
+    top: 150px !important;
+    left: 10px !important;
+  }
+  .text-faq .text-faq1 p {
+    font-size: 12px !important;
+  }
+  .cray {
+    width: 300px !important;
+    height: 100%;
+  }
+  .cr-btn {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
